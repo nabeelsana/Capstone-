@@ -15,14 +15,21 @@ def init():
 
     # The AZUREML_MODEL_DIR environment variable indicates
     # a directory containing the model file you registered.
-    model_filename = 'model.pkl'
+    model_filename = 'HearFailure_AutoML_Model.pkl'
     model_path = os.path.join(os.environ['AZUREML_MODEL_DIR'], model_filename)
 
     model = joblib.load(model_path)
 
 
 # The run() method is called each time a request is made to the scoring API.
-data= './data.json'
+#
+# Shown here are the optional input_schema and output_schema decorators
+# from the inference-schema pip package. Using these decorators on your
+# run() method parses and validates the incoming payload against
+# the example input you provide here. This will also generate a Swagger
+# API document for your web service.
+@input_schema('data', NumpyParameterType(np.array([[75,0,582,0,20,1,265000,1.9,130,1,0,4]])))
+@output_schema(NumpyParameterType(np.array([1,0])))
 def run(data):
     # Use the model object loaded by init().
     result = model.predict(data)
