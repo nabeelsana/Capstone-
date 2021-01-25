@@ -1,6 +1,6 @@
 # Capstone Project
 
-## A link to the screencast video on YouTube (or a similar alternative streaming service)
+##Link to the screencast video on YouTube 
 
 ##Project Overview
 
