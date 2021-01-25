@@ -6,6 +6,29 @@
 
 #Dataset used
 
+We have used Heart failure clinical records data set as published on "UCI Machine Learning Repository"and "Kaggle Heart Failure Prediction" competion. 
+
+This data set has been published as part of folowing paper: Davide Chicco, Giuseppe Jurman: "Machine learning can predict survival of patients with heart failure from serum creatinine and ejection fraction alone". BMC Medical Informatics and Decision Making 20, 16 (2020). [Web Link]
+
+This dataset contains the medical records of 299 heart failure patients collected at the Faisalabad Institute of Cardiology and at the Allied Hospital in Faisalabad (Punjab, Pakistan), during April–December 2015 [52, 66]. The patients consisted of 105 women and 194 men, and their ages range between 40 and 95 years old (Table 1). All 299 patients had left ventricular systolic dysfunction and had previous heart failures that put them in classes III or IV of New York Heart Association (NYHA) classification of the stages of heart failure.
+
+The dataset contains 13 features, which report clinical, body, and lifestyle information (Table 1), that we briefly describe here.
+
+- Age: age of the patient (years)
+- Anaemia: decrease of red blood cells or hemoglobin (boolean)
+- High blood pressure: if the patient has hypertension (boolean)
+- Ceatinine phosphokinase (CPK): level of the CPK enzyme in the blood (mcg/L)
+- Diabetes: if the patient has diabetes (boolean)
+- Ejection fraction: percentage of blood leaving the heart at each contraction (percentage)
+- Platelets: platelets in the blood (kiloplatelets/mL)
+- Sex: woman or man (binary)
+- Serum creatinine: level of serum creatinine in the blood (mg/dL)
+- Serum sodium: level of serum sodium in the blood (mEq/L)
+- Smoking: if the patient smokes or not (boolean)
+- Time: follow-up period (days)
+- [target] Death event: if the patient deceased during the follow-up period (boolean)
+
+
 #Data import into Azure ML Studio workspace.
 
 #AutoML experiment: settings and configuration
