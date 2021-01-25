@@ -4,6 +4,24 @@
 
 #Project Overview
 
+This is the capstone project as part of Azure Nanodegree Program, Machine Learning Engineer with Microsoft Azure.
+
+As required by the project we have selected "Heart failure clinical records" data set (details section below) and performed machine learning task of predicting survival of patients facing heart failure (binary classification ) using 12 feautures identified in the data set. 
+
+As per the project guidance we created two experiments, one using Automated ML (AutoML) and another model using Scikit Learn Logistic Regression classifier, whose hyperparameters were tuned using HyperDrive
+
+From each experiment we selected one best model based on "accuracy" metric. 
+
+Details are: 
+
+i) AutoML best model: 
+
+ii) HyperDr
+
+Based on comparison of two models we selected --- model from AutoML eperiment and then deployed it as a webservice (REST API). We then tested the webservice by sending a request to the model endpint.
+
+
+
 #Dataset used
 
 We have used Heart failure clinical records data set as published on "UCI Machine Learning Repository"and "Kaggle Heart Failure Prediction" competion. 
