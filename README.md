@@ -22,7 +22,7 @@ Based on comparison of two models we selected --- model from AutoML eperiment an
 
 
 
-#Dataset used
+## Dataset used
 
 We have used Heart failure clinical records data set as published on "UCI Machine Learning Repository"and "Kaggle Heart Failure Prediction" competion. 
 
@@ -47,7 +47,7 @@ The dataset contains 13 features, which report clinical, body, and lifestyle inf
 - [target] Death event: if the patient deceased during the follow-up period (boolean)
 
 
-#Data import into Azure ML Studio workspace.
+## Data import into Azure ML Studio workspace.
 
 We have source data set as a csv file from kaggle competion [Kaggle!](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). 
 
@@ -66,7 +66,7 @@ AutoML experiment was configured using folloing setting:
 - Early stopping enabled.
 
 
-#Hyperparameter search: types of parameters and their ranges
+## Hyperparameter search: types of parameters and their ranges
 
 As machine learning task at hand was of Classification, we use Sci-kit Learn Logistic Regression classifier. 
 We decided to tune two hyperparameters as follows: 
@@ -80,7 +80,7 @@ Hyperdrive parameter sampler was RamdomParameterSampling. This rendomly selects 
 Hyperdrive was configured to select best parameters using highest accuracy scored produced and the goal was to maximize the accuracy metric. A total of 40 model runs were alowed with 4 max concurrent runs. 
 
 
-#Two models with the best parameters
+## Two models with the best parameters
 
 i) From AutoML experiment best model selected was VotingEnsemble with _ _ % accuracy. Details of its parameters are as follows:
 
@@ -88,7 +88,7 @@ i) From AutoML experiment best model selected was VotingEnsemble with _ _ % accu
 ii) From Sci-kit Learn trained model , tuned with Hyperdrive, best model was  ----- with - - % accuracy. Details of its parameters are as follows:
 
 
-#Deployed model and instructions on how to query the endpoint with a sample input
+## Deployed model and instructions on how to query the endpoint with a sample input
 
 Based on higher accuracy metric produced, we selected VotingEnsemble model produced by AutoML experiment for deployment. 
 In order to deploy it , we first registerd the model and provided it an environment for deployment. We took advantage of Azure provided environment "AzureML-AutoML" . 
@@ -97,7 +97,7 @@ We then deployed the model using Azure Container Instance Webservices (Aci). Dep
 We passed test data inform of Json load to webservice configured and it validated our deployment by providing a response in expected format (1,0)
 
 
-#How to improve the project in the future
+## How to improve the project in the future
 
 We can suggest following improvments that may result in better model or faster model deployment:
 
@@ -116,7 +116,7 @@ vii) In Hyperdrive experiment test more hyperparameter for tuning such as penalt
 iv) In Hyperdrive pipeline to address class imbalance in data by either using SMOTE resampling technique or using class_weight parameter.
 
 
-#ALL the screenshots required with a short description
+## ALL the screenshots required with a short description
 
 i) AutoML Model: 
 
