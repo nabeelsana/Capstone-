@@ -68,6 +68,16 @@ AutoML experiment was configured using folloing setting:
 
 #Hyperparameter search: types of parameters and their ranges
 
+As machine learning task at hand was of Classification, we use Sci-kit Learn Logistic Regression classifier. 
+We decided to tune two hyperparameters as follows: 
+
+i) C: This controls regularization in model i.e co-efficient values. It is inverse of regularization strength  i.e smaller values cuase stronger regularization. We tested it using Hyperdrive using a unform sample space from 0 to 1.
+
+ii) max_iter: Maximum number of iterations allowed for model to converge. We tested it using Hyperdrive using a set sample of list values 50,100,150,200,250.
+
+Hyperdrive parameter sampler was RamdomParameterSampling. This rendomly selects paramter values from sample space provided. 
+
+Hyperdrive was configured to select best parameters using highest accuracy scored produced and the goal was to maximize the accuracy metric. A total of 40 model runs were alowed with 4 max concurrent runs. 
 
 
 #Two models with the best parameters
