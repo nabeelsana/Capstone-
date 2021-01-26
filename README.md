@@ -80,7 +80,7 @@ ii) From Sci-kit Learn trained model , tuned with Hyperdrive, best model was  --
 
 #Deployed model and instructions on how to query the endpoint with a sample input
 
-Best on higher accuracy metric produced, we selected VotingEnsemble produced by AutoML experiment for deployment. 
+Based on higher accuracy metric produced, we selected VotingEnsemble model produced by AutoML experiment for deployment. 
 In order to deploy it , we first registerd the model and provided it an environment for deployment. We took advantage of Azure provided environment "AzureML-AutoML" . 
 We set up Inference Configuration and provided it with a scoring file, this file contained API model (i.e fields that API would need for data interchange).
 We then deployed the model using Azure Container Instance Webservices (Aci). Deployment enabled a REST API that prvide scoring uri with keys for authentication. 
@@ -89,8 +89,21 @@ We passed test data inform of Json load to webservice configured and it validate
 
 #How to improve the project in the future
 
+We can suggest following improvments that may result in better model or faster model deployment:
 
+i) Use more powerful computer cluster such as GPU instanced with more nodes. This may enable increase in concurrent iterations.
 
+ii) Data has class imbalance with many 1/3 deaths events vs 2/3 non deaths events. We might address it by procuring more data.
+
+iii) We need to assess Classifiers that AutoML has not tested and hyperparameters that are not configured. We might further wish to train our data using those model and parameters by using hyperdrive run and experiment with a different set of parameters.
+
+iv) In Hyperdrive experimnet test more classifiers including some of ensemble classifiers as identified by AutoML. This might improve model performance by identifying a faster and more accurate model. 
+
+v) In Hyperdrive experiment use Bayesian Parameter sampling: This might make experiment run faster and be able to quickly identify best hyperparameter.
+
+vii) In Hyperdrive experiment test more hyperparameter for tuning such as penalty, solver, class_weight etc. They might improve model performance by testing a hyperparameter combination that is able to yield more accurate model.
+
+iv) In Hyperdrive pipeline to address class imbalance in data by either using SMOTE resampling technique or using class_weight parameter.
 
 
 #ALL the screenshots required with a short description
