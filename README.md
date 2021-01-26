@@ -16,7 +16,7 @@ Details are:
 
 i) AutoML best model: 
 
-ii) HyperDr
+ii) HyperDrive experiment
 
 Based on comparison of two models we selected --- model from AutoML eperiment and then deployed it as a webservice (REST API). We then tested the webservice by sending a request to the model endpint.
 
