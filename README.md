@@ -59,11 +59,11 @@ For our hyperdrive expermient, we read data as a pandas dataframe into our exper
 
 AutoML experiment was configured using folloing setting:
 
--4 concurrent iterations of models
--primary metric as "accuracy"
--machine learning task as "Calssification". 
--Automatic feature selection by AutoML.
--Early stopping enabled.
+- 4 concurrent iterations of models
+- primary metric as "accuracy"
+- machine learning task as "Calssification". 
+- Automatic feature selection by AutoML.
+- Early stopping enabled.
 
 
 #Hyperparameter search: types of parameters and their ranges
