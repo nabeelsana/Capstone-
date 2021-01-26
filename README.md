@@ -49,6 +49,10 @@ The dataset contains 13 features, which report clinical, body, and lifestyle inf
 
 #Data import into Azure ML Studio workspace.
 
+We have source data set as a csv file from kaggle competion [Kaggle!](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). 
+We uploaded this file into our workspace and then uploaded it into our deafult datastore. From their convert this file into Tabular data set for our AUtoML eperiment purposes.
+For our hyperdrive expermient, we read data as a pandas dataframe into our experiment.
+
 #AutoML experiment: settings and configuration
 
 #Hyperparameter search: types of parameters and their ranges
