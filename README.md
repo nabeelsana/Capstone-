@@ -113,7 +113,11 @@ v) In Hyperdrive experiment use Bayesian Parameter sampling: This might make exp
 
 vii) In Hyperdrive experiment test more hyperparameter for tuning such as penalty, solver, class_weight etc. They might improve model performance by testing a hyperparameter combination that is able to yield more accurate model.
 
-iv) In Hyperdrive pipeline to address class imbalance in data by either using SMOTE resampling technique or using class_weight parameter.
+iv) In Hyperdrive experiment to address class imbalance in data by either using SMOTE resampling technique or using class_weight parameter.
+
+vi) In Hyperdrive experiment we have now performed any feature engineering or data standarization/normalization. Conversely we have not performed any Principal Component Analysis (PCA) to identify features with best predictive powers. We might perform these steps/techniques to improve score of model on accuracy metric.
+
+vii) We might select further types of classifiers from Sci-kit learn library like Decision Tree classifier etc and train them to get a model with better accuracy score.
 
 
 ## ALL the screenshots required with a short description
