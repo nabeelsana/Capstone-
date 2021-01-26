@@ -2,7 +2,7 @@
 
 #Link to the screencast video on YouTube 
 
-#Project Overview
+## Project Overview
 
 This is the capstone project as part of Azure Nanodegree Program, Machine Learning Engineer with Microsoft Azure.
 
