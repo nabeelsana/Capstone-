@@ -59,20 +59,39 @@ For our hyperdrive expermient, we read data as a pandas dataframe into our exper
 
 AutoML experiment was configured using folloing setting:
 
-- 4 concurrent iterations of models
-- primary metric as "accuracy"
-- machine learning task as "Calssification". 
+- 4 concurrent iterations of models.
+- primary metric as "accuracy".
+- machine learning task as "Classification". 
 - Automatic feature selection by AutoML.
 - Early stopping enabled.
 
 
 #Hyperparameter search: types of parameters and their ranges
 
+
+
 #Two models with the best parameters
+
+i) From AutoML experiment best model selected was VotingEnsemble with _ _ % accuracy. Details of its parameters are as follows:
+
+
+ii) From Sci-kit Learn trained model , tuned with Hyperdrive, best model was  ----- with - - % accuracy. Details of its parameters are as follows:
+
 
 #Deployed model and instructions on how to query the endpoint with a sample input
 
+Best on higher accuracy metric produced, we selected VotingEnsemble produced by AutoML experiment for deployment. 
+In order to deploy it , we first registerd the model and provided it an environment for deployment. We took advantage of Azure provided environment "AzureML-AutoML" . 
+We set up Inference Configuration and provided it with a scoring file, this file contained API model (i.e fields that API would need for data interchange).
+We then deployed the model using Azure Container Instance Webservices (Aci). Deployment enabled a REST API that prvide scoring uri with keys for authentication. 
+We passed test data inform of Json load to webservice configured and it validated our deployment by providing a response in expected format (1,0)
+
+
 #How to improve the project in the future
+
+
+
+
 
 #ALL the screenshots required with a short description
 
