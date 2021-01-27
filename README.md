@@ -128,6 +128,10 @@ Status: Completed)
 
 ii) From Sci-kit Learn trained model , tuned with Hyperdrive, best model was  ----- with - - % accuracy. Details of its parameters are as follows:
 
+['--C', '0.8848572144734638', '--max_iter', '100']
+
+['azureml-logs/55_azureml-execution-tvmps_6eb769e7b62b3e218af72fc8cae4a76f4ef40e8d87d3341b9d3d0b1fc81467b2_d.txt', 'azureml-logs/65_job_prep-tvmps_6eb769e7b62b3e218af72fc8cae4a76f4ef40e8d87d3341b9d3d0b1fc81467b2_d.txt', 'azureml-logs/70_driver_log.txt', 'azureml-logs/75_job_post-tvmps_6eb769e7b62b3e218af72fc8cae4a76f4ef40e8d87d3341b9d3d0b1fc81467b2_d.txt', 'azureml-logs/process_info.json', 'azureml-logs/process_status.json', 'logs/azureml/100_azureml.log', 'logs/azureml/job_prep_azureml.log', 'logs/azureml/job_release_azureml.log', 'outputs/model.joblib']
+
 
 ## Deployed model and instructions on how to query the endpoint with a sample input
 
