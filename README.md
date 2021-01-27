@@ -84,6 +84,47 @@ Hyperdrive was configured to select best parameters using highest accuracy score
 
 i) From AutoML experiment best model selected was VotingEnsemble with _ _ % accuracy. Details of its parameters are as follows:
 
+Pipeline(memory=None,
+         steps=[('datatransformer',
+                 DataTransformer(enable_dnn=None, enable_feature_sweeping=None,
+                                 feature_sweeping_config=None,
+                                 feature_sweeping_timeout=None,
+                                 featurization_config=None, force_text_dnn=None,
+                                 is_cross_validation=None,
+                                 is_onnx_compatible=None, logger=None,
+                                 observer=None, task=None, working_dir=None)),
+                ('prefittedsoftvotingclassifier',...
+                                                                                               min_child_weight=1,
+                                                                                               missing=nan,
+                                                                                               n_estimators=10,
+                                                                                               n_jobs=1,
+                                                                                               nthread=None,
+                                                                                               objective='reg:logistic',
+                                                                                               random_state=0,
+                                                                                               reg_alpha=0,
+                                                                                               reg_lambda=0.625,
+                                                                                               scale_pos_weight=1,
+                                                                                               seed=None,
+                                                                                               silent=None,
+                                                                                               subsample=1,
+                                                                                               tree_method='auto',
+                                                                                               verbose=-10,
+                                                                                               verbosity=0))],
+                                                                     verbose=False))],
+                                               flatten_transform=None,
+                                               weights=[0.125, 0.125, 0.125,
+                                                        0.125, 0.125, 0.125,
+                                                        0.125, 0.125]))],
+         verbose=False)
+         
+         
+   Run(Experiment: capstone-Automl,
+Id: AutoML_8934d6c4-8831-4d4b-98e5-907b3bdab98d_40,
+Type: azureml.scriptrun,
+Status: Completed)
+
+{'precision_score_weighted': 0.8958617020161247, 'average_precision_score_micro': 0.9269018734864382, 'AUC_weighted': 0.9191387579070647, 'balanced_accuracy': 0.8511186336229242, 'matthews_correlation': 0.7423301682990012, 'f1_score_weighted': 0.8784478545347623, 'precision_score_macro': 0.8941003107622102, 'precision_score_micro': 0.8831034482758622, 'f1_score_macro': 0.8596588655909961, 'recall_score_weighted': 0.8831034482758622, 'f1_score_micro': 0.8831034482758622, 'weighted_accuracy': 0.9035554026334669, 'log_loss': 0.3830698345834191, 'recall_score_macro': 0.8511186336229242, 'AUC_macro': 0.9191387579070645, 'norm_macro_recall': 0.7022372672458486, 'average_precision_score_weighted': 0.9299034435441277, 'accuracy': 0.8831034482758622, 'average_precision_score_macro': 0.9077163867341911, 'recall_score_micro': 0.8831034482758622, 'AUC_micro': 0.9237253269916765, 'confusion_matrix': 'aml://artifactId/ExperimentRun/dcid.AutoML_8934d6c4-8831-4d4b-98e5-907b3bdab98d_40/confusion_matrix', 'accuracy_table': 'aml://artifactId/ExperimentRun/dcid.AutoML_8934d6c4-8831-4d4b-98e5-907b3bdab98d_40/accuracy_table'}
+
 
 ii) From Sci-kit Learn trained model , tuned with Hyperdrive, best model was  ----- with - - % accuracy. Details of its parameters are as follows:
 
