@@ -18,7 +18,7 @@ def init():
 
     # The AZUREML_MODEL_DIR environment variable indicates
     # a directory containing the model file you registered.
-    model_filename = 'HearFailure_AutoML_Model'
+    model_filename = 'model.pkl'
     #model_path = Model.get_model_path(model_filename)
     #model= joblib.load(model_path)
     model_path = os.path.join(os.environ['AZUREML_MODEL_DIR'], model_filename)
@@ -40,8 +40,8 @@ def init():
 #@output_schema(NumpyParameterType(np.array([1,0])))
 def run(data):
     try:
-        data= np.array(json.loads(data))
-    #data= pd.DataFrame.from_dict(data)
+        data= json.loads(data)['data']
+        data= pd.DataFrame.from_dict(data)
     # Use the model object loaded by init().
         result = model.predict(data)
 
