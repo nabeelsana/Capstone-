@@ -170,9 +170,12 @@ vii) We might select further types of classifiers from Sci-kit learn library lik
 i) AutoML Model: 
 
 -screenshot of the RunDetails widget that shows the progress of the training runs of the different experiments.
+
 ![](https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/AutoML_RunWidget1.png)
 
+
 -screenshot of the best model with its run id.
+
 
 ![](https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/AutoML_BestModel2.png)
 
@@ -182,17 +185,23 @@ i) AutoML Model:
 
 ii) Hyperdrive Model:
 
--creenshot of the RunDetails widget that shows the progress of the training runs of the different experiments.
+-Screenshot of the RunDetails widget that shows the progress of the training runs of the different experiments.
+
+
 ![](https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/HyperDrive_Runwidget1.png)
+
 
 ![](https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/HyperDrive_Runwidget2.png)
 
+
 ![](https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/HyperDrive_Runwidget3.png)
+
 
 ![](https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/HyperDrive_Runwidget4.png)
 
 
--a screenshot of the best model with its run id and the different hyperparameters that were tuned.
+-screenshot of the best model with its run id and the different hyperparameters that were tuned.
+
 
 ![](https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/HyperDrive_BestModel5.png)
 
@@ -202,7 +211,9 @@ Deploying the Model:
 
 -screenshot showing the model endpoint as active.
 
+
 ![](https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/Model_EndPoint1.png)
+
 
 ![](https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/Model_EndPoint2.png)
 
