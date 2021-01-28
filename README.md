@@ -6,7 +6,7 @@
 
 This is the capstone project as part of Azure Nanodegree Program, Machine Learning Engineer with Microsoft Azure.
 
-As required by the project we have selected an external dataset "Heart failure clinical records" (details section below) and performed machine learning task of predicting survival of patients facing heart failure (binary classification ) using 12 feautures identified in the data set. 
+As required by the project we have selected an external dataset "Heart failure clinical records" (detail section below) and performed machine learning task of predicting survival of patients facing heart failure (binary classification ) using 12 feautures identified in the data set. 
 
 As per the project guidance we created two experiments, one using Automated ML (AutoML) and another model using Scikit Learn Logistic Regression classifier, whose hyperparameters were tuned using HyperDrive
 
@@ -60,7 +60,7 @@ We uploaded this file into our workspace and then uploaded it into our deafult d
 
 For our hyperdrive expermient, we read data as a pandas dataframe into our experiment.
 
-#AutoML experiment: settings and configuration
+##AutoML experiment: settings and configuration
 
 AutoML experiment was configured using folloing setting:
 
