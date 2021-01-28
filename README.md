@@ -60,7 +60,7 @@ We uploaded this file into our workspace and then uploaded it into our deafult d
 
 For our hyperdrive expermient, we read data as a pandas dataframe into our experiment.
 
-##AutoML experiment: settings and configuration
+## AutoML experiment: settings and configuration
 
 AutoML experiment was configured using folloing setting:
 
