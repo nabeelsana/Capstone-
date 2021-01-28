@@ -6,7 +6,7 @@
 
 This is the capstone project as part of Azure Nanodegree Program, Machine Learning Engineer with Microsoft Azure.
 
-As required by the project we have selected "Heart failure clinical records" data set (details section below) and performed machine learning task of predicting survival of patients facing heart failure (binary classification ) using 12 feautures identified in the data set. 
+As required by the project we have selected an external dataset "Heart failure clinical records" (details section below) and performed machine learning task of predicting survival of patients facing heart failure (binary classification ) using 12 feautures identified in the data set. 
 
 As per the project guidance we created two experiments, one using Automated ML (AutoML) and another model using Scikit Learn Logistic Regression classifier, whose hyperparameters were tuned using HyperDrive
 
@@ -16,9 +16,14 @@ Details are:
 
 i) AutoML best model: 
 
+From AutoML experiment best model selected was VotingEnsemble with 88% accuracy.
+
 ii) HyperDrive experiment
 
-Based on comparison of two models we selected --- model from AutoML eperiment and then deployed it as a webservice (REST API). We then tested the webservice by sending a request to the model endpint.
+From Sci-kit Learn trained model , tuned with Hyperdrive, best model was  Logistic Regression with 83 % accuracy
+
+
+Based on comparison of two models we selected VotingEnsemble model from AutoML eperiment and then deployed it as a webservice (REST API). We then tested the webservice by sending a request to the model endpint.
 
 
 
@@ -82,41 +87,24 @@ Hyperdrive was configured to select best parameters using highest accuracy score
 
 ## Two models with the best parameters
 
-i) From AutoML experiment best model selected was VotingEnsemble with _ _ % accuracy. Details of its parameters are as follows:
-
-Pipeline(memory=None,
-         steps=[('datatransformer',
-                 DataTransformer(enable_dnn=None, enable_feature_sweeping=None,
-                                 feature_sweeping_config=None,
-                                 feature_sweeping_timeout=None,
-                                 featurization_config=None, force_text_dnn=None,
-                                 is_cross_validation=None,
-                                 is_onnx_compatible=None, logger=None,
-                                 observer=None, task=None, working_dir=None)),
-                ('prefittedsoftvotingclassifier',...
-                                                                                               min_child_weight=1,
-                                                                                               missing=nan,
-                                                                                               n_estimators=10,
-                                                                                               n_jobs=1,
-                                                                                               nthread=None,
-                                                                                               objective='reg:logistic',
-                                                                                               random_state=0,
-                                                                                               reg_alpha=0,
-                                                                                               reg_lambda=0.625,
-                                                                                               scale_pos_weight=1,
-                                                                                               seed=None,
-                                                                                               silent=None,
-                                                                                               subsample=1,
-                                                                                               tree_method='auto',
-                                                                                               verbose=-10,
-                                                                                               verbosity=0))],
-                                                                     verbose=False))],
-                                               flatten_transform=None,
-                                               weights=[0.125, 0.125, 0.125,
-                                                        0.125, 0.125, 0.125,
-                                                        0.125, 0.125]))],
-         verbose=False)
-         
+i) From AutoML experiment best model selected was VotingEnsemble with 88% accuracy. Details of its parameters are as follows:
+min_child_weight=1,
+ missing=nan,
+n_estimators=10,
+ n_jobs=1,
+nthread=None,
+objective='reg:logistic',
+  random_state=0,
+  reg_alpha=0,
+  reg_lambda=0.625,
+  scale_pos_weight=1,
+ seed=None,
+  silent=None,
+   subsample=1,
+   tree_method='auto', 
+   flatten_transform=None,
+ weights=[0.125, 0.125, 0.125,  0.125, 0.125, 0.125, 0.125, 0.125]
+       
          
    Run(Experiment: capstone-Automl,
 Id: AutoML_8934d6c4-8831-4d4b-98e5-907b3bdab98d_40,
@@ -126,11 +114,9 @@ Status: Completed)
 {'precision_score_weighted': 0.8958617020161247, 'average_precision_score_micro': 0.9269018734864382, 'AUC_weighted': 0.9191387579070647, 'balanced_accuracy': 0.8511186336229242, 'matthews_correlation': 0.7423301682990012, 'f1_score_weighted': 0.8784478545347623, 'precision_score_macro': 0.8941003107622102, 'precision_score_micro': 0.8831034482758622, 'f1_score_macro': 0.8596588655909961, 'recall_score_weighted': 0.8831034482758622, 'f1_score_micro': 0.8831034482758622, 'weighted_accuracy': 0.9035554026334669, 'log_loss': 0.3830698345834191, 'recall_score_macro': 0.8511186336229242, 'AUC_macro': 0.9191387579070645, 'norm_macro_recall': 0.7022372672458486, 'average_precision_score_weighted': 0.9299034435441277, 'accuracy': 0.8831034482758622, 'average_precision_score_macro': 0.9077163867341911, 'recall_score_micro': 0.8831034482758622, 'AUC_micro': 0.9237253269916765, 'confusion_matrix': 'aml://artifactId/ExperimentRun/dcid.AutoML_8934d6c4-8831-4d4b-98e5-907b3bdab98d_40/confusion_matrix', 'accuracy_table': 'aml://artifactId/ExperimentRun/dcid.AutoML_8934d6c4-8831-4d4b-98e5-907b3bdab98d_40/accuracy_table'}
 
 
-ii) From Sci-kit Learn trained model , tuned with Hyperdrive, best model was  ----- with - - % accuracy. Details of its parameters are as follows:
+ii) From Sci-kit Learn trained model , tuned with Hyperdrive, best model was  Logistic Regression with 83 % accuracy. Details of its parameters are as follows:
 
 ['--C', '0.8848572144734638', '--max_iter', '100']
-
-['azureml-logs/55_azureml-execution-tvmps_6eb769e7b62b3e218af72fc8cae4a76f4ef40e8d87d3341b9d3d0b1fc81467b2_d.txt', 'azureml-logs/65_job_prep-tvmps_6eb769e7b62b3e218af72fc8cae4a76f4ef40e8d87d3341b9d3d0b1fc81467b2_d.txt', 'azureml-logs/70_driver_log.txt', 'azureml-logs/75_job_post-tvmps_6eb769e7b62b3e218af72fc8cae4a76f4ef40e8d87d3341b9d3d0b1fc81467b2_d.txt', 'azureml-logs/process_info.json', 'azureml-logs/process_status.json', 'logs/azureml/100_azureml.log', 'logs/azureml/job_prep_azureml.log', 'logs/azureml/job_release_azureml.log', 'outputs/model.joblib']
 
 
 ## Deployed model and instructions on how to query the endpoint with a sample input
