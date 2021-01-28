@@ -165,21 +165,51 @@ vi) In Hyperdrive experiment we have now performed any feature engineering or da
 vii) We might select further types of classifiers from Sci-kit learn library like Decision Tree classifier etc and train them to get a model with better accuracy score.
 
 
-## ALL the screenshots required with a short description
+## Screen shots with a short description
 
 i) AutoML Model: 
 
 -screenshot of the RunDetails widget that shows the progress of the training runs of the different experiments.
+https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/AutoML_RunWidget1.png
+
 -screenshot of the best model with its run id.
+
+https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/AutoML_BestModel2.png
+
+
+https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/AutoML_BestModel3.png
+
 
 ii) Hyperdrive Model:
 
 -creenshot of the RunDetails widget that shows the progress of the training runs of the different experiments.
+
+
+https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/HyperDrive_Runwidget1.png
+
+https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/HyperDrive_Runwidget2.png
+
+https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/HyperDrive_Runwidget3.png
+
+https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/HyperDrive_Runwidget4.png
+
+
 -a screenshot of the best model with its run id and the different hyperparameters that were tuned.
 
+https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/HyperDrive_BestModel5.png
+
+
+
 Deploying the Model:
+
 -screenshot showing the model endpoint as active.
 
+https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/Model_EndPoint1.png
+
+https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/Model_EndPoint2.png
 
 
+-Webservice deleted
+
+https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/Webservicedeleted1.png
 
