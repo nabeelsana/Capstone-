@@ -88,22 +88,22 @@ Hyperdrive was configured to select best parameters using highest accuracy score
 ## Two models with the best parameters
 
 i) From AutoML experiment best model selected was VotingEnsemble with 88% accuracy. Details of its parameters are as follows:
-min_child_weight=1,
- missing=nan,
-n_estimators=10,
- n_jobs=1,
-nthread=None,
-objective='reg:logistic',
-  random_state=0,
-  reg_alpha=0,
-  reg_lambda=0.625,
-  scale_pos_weight=1,
- seed=None,
-  silent=None,
-   subsample=1,
-   tree_method='auto', 
-   flatten_transform=None,
- weights=[0.125, 0.125, 0.125,  0.125, 0.125, 0.125, 0.125, 0.125]
+-min_child_weight=1,
+-missing=nan,
+-n_estimators=10,
+-n_jobs=1,
+-nthread=None,
+-objective='reg:logistic',
+-random_state=0,
+-reg_alpha=0,
+-reg_lambda=0.625,
+-scale_pos_weight=1,
+-seed=None,
+-silent=None,
+-subsample=1,
+-tree_method='auto', 
+-flatten_transform=None,
+-weights=[0.125, 0.125, 0.125,  0.125, 0.125, 0.125, 0.125, 0.125]
        
          
    Run(Experiment: capstone-Automl,
