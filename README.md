@@ -124,7 +124,7 @@ ii) From Sci-kit Learn trained model , tuned with Hyperdrive, best model was  Lo
 Based on higher accuracy metric produced, we selected VotingEnsemble model produced by AutoML experiment for deployment. 
 In order to deploy it , we first registerd the model and provided it an environment for deployment. We took advantage of Azure provided environment "AzureML-AutoML" . 
 We set up Inference Configuration and provided it with a scoring file, this file contained API model (i.e fields that API would need for data interchange).
-We then deployed the model using Azure Container Instance Webservices (Aci). Deployment enabled a REST API that prvide scoring uri with keys for authentication. 
+We then deployed the model using Azure Container Instance Webservices (Aci). Deployment enabled a REST API that provide scoring uri with keys for authentication. 
 We passed test data inform of Json load to webservice configured and it validated our deployment by providing a response in expected format (1,0)
 
 
@@ -136,9 +136,9 @@ i) Use more powerful computer cluster such as GPU instanced with more nodes. Thi
 
 ii) Data has class imbalance with many 1/3 deaths events vs 2/3 non deaths events. We might address it by procuring more data.
 
-iii) We need to assess Classifiers that AutoML has not tested and hyperparameters that are not configured. We might further wish to train our data using those model and parameters by using hyperdrive run and experiment with a different set of parameters.
+iii) We need to assess Classifiers that AutoML had not tested and hyperparameters that were not configured. We might further wish to train our data using those model and parameters by using hyperdrive run and experiment with a different set of parameters.
 
-iv) In Hyperdrive experimnet test more classifiers including some of ensemble classifiers as identified by AutoML. This might improve model performance by identifying a faster and more accurate model. 
+iv) In Hyperdrive experimnet test might use more classifiers including some of ensemble classifiers as identified by AutoML. This might improve model performance by identifying a faster and more accurate model. 
 
 v) In Hyperdrive experiment use Bayesian Parameter sampling: This might make experiment run faster and be able to quickly identify best hyperparameter.
 
@@ -160,7 +160,7 @@ i) AutoML Model:
 ![](https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/AutoML_RunWidget1.png)
 
 
--screenshot of the best model with its run id.
+-screenshot of the best model based in accuracy metric with its run id.
 
 
 ![](https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/AutoML_BestModel2.png)
@@ -195,7 +195,7 @@ ii) Hyperdrive Model:
 
 Deploying the Model:
 
--screenshot showing the model endpoint as active.
+-screenshot showing the deployed model, endpoint as active.
 
 
 ![](https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/Model_EndPoint1.png)
@@ -204,7 +204,7 @@ Deploying the Model:
 ![](https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/Model_EndPoint2.png)
 
 
--Webservice deleted
+-After completion of eperiment, Webservice is being deleted
 
 ![](https://github.com/nabeelsana/Capstone_Project/blob/master/starter_file/Webservicedeleted1.png)
 
